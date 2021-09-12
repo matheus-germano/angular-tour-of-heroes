@@ -1,11 +1,11 @@
 <!-- Hero details -->
 <!-- add *ngIf to hide empty details and don't crash de app -->
 <!-- This div will only appear after clicking in any hero -->
-<div *ngIf="selectedHero">
+<div *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
   <div>
     <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
   </div>
 </div>
